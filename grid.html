@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+
+      }
+
+      .bx {
+        max-width: 500px;
+        height: 500px;
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+      }
+
+      .items1 {
+        background-color: red;
+        grid-row: 2/3;
+        grid-column: 3/4;
+      }
+
+      .items2 {
+        background-color: silver;
+      }
+
+      .items3 {
+        background-color: rgb(38, 184, 87);
+      }
+
+      .items4 {
+        background-color: rgb(121, 11, 165);
+      }
+
+      .items5 {
+        background-color: rgb(29, 128, 82);
+      }
+
+      .items6 {
+        background-color: rgb(206, 131, 131);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bx">
+      <div class="items1">
+        <h2>box1</h2>
+      </div>
+      <div class="items2">
+        <h2>box2</h2>
+      </div>
+      <div class="items3">
+        <h2>box3</h2>
+      </div>
+      <div class="items4">
+        <h2>box4</h2>
+      </div>
+      <div class="items5">
+        <h2>box5</h2>
+      </div>
+      <div class="items6">
+        <h2>box6</h2>
+      </div>
+      <item></item>
+    </div>
+  </body>
+
+</html>

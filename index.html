@@ -6,56 +6,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-      .box {
-        background-color: purple;
-        color: white;
-
-        height: 100px;
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
       }
 
-      .box h2 {
-        text-align: center;
-        padding: 30px;
+      body {
+        padding: 10px 20px;
+        background-color: wheat;
       }
 
-      .bx {
-        margin-top: 10px;
-        height: 300px;
+      img {
+        width: 100%;
+      }
+
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding-left: 10px;
+        color: black;
+      }
+
+      h1 {
+        font-size: 60px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+
+      h2 {
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+        margin: 10px 0px;
+
+      }
+
+      p {
+        font-size: 15px;
+        font-family: cursive;
+
+      }
+
+      header {
+
         display: flex;
-        justify-content: space-around;
-
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0px;
       }
 
-      .ar {
-        margin: 10px;
-        border: 1px solid aqua;
-        border-radius: 1px;
-        background-color: aqua;
+      .dis-sec {
+
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        column-gap: 40px;
+        /* justify-content: space-between; */
+        align-items: center;
+      }
+
+      .ar-sec {
+        margin: 20px 0px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+        column-gap: 30px;
+      }
+
+      .article {
+        padding: 10px 20px;
+
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        height: 300px;
       }
     </style>
   </head>
 
   <body>
-    <div class="box">
-      <h2>Sample Flexbox example</h2>
+    <header>
+      <h1>Sample Grid</h1>
+      <nav>
+        <a href="#">HOME</a>
+        <a href="#">about</a>
+        <a href="#">contact</a>
+      </nav>
+    </header>
+    <div class="dis-sec">
+      <img
+        src="https://img.freepik.com/premium-photo/sky-cloud-concept-beautiful-blue-sky-mountains-beautiful-cumulus-cloud-bright-sky-background_1715-11299.jpg?size=626&ext=jpg"
+        alt="">
+
+
+      <div class="dis-info">
+        <h2>sample grid</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt possimus alias iste autem commodi
+          distinctio
+          ducimus dignissimos adipisci, minima sint sequi. Cupiditate odit corrupti neque at, blanditiis quibusdam ad
+          illo
+          officia ipsa qui, eius impedit voluptatem tenetur. Inventore, incidunt tempora. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Illo tenetur, quo voluptatem omnis quibusdam debitis, adipisci quia inventore
+          itaque, quisquam deleniti vitae repellendus! Impedit debitis dolore quidem, libero veritatislorem30 Lorem
+          ipsum dolor sit, amet consectetur adipisicing elit. Distinctio repellat quisquam harum aut! Illo eveniet autem
+          praesentium voluptatum, iure ea! Magni odio provident nostrum nisi aliquid! Quae aspernatur totam dolore.</p>
+      </div>
     </div>
-    <div class="bx">
-      <div class="ar ar1">
-        <h3>First article</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam numquam exercitationem veniam quidem,
-          facere perspiciatis qui, impedit hic, nisi ad quos quod quam labore et natus corrupti alias nemo dolore!</p>
+    <div class="ar-sec">
+      <div class="article">
+        <h2>Sample grid1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem at in laudantium, tenetur hic quam
+          praesentium ad, atque itaque maxime dolorem fugiat recusandae voluptatem ex! Veritatis, magnam! Tenetur,
+          exercitationem assumenda?</p>
       </div>
-      <div class="ar ar2">
-        <h3>second article</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam numquam exercitationem veniam quidem,
-          facere perspiciatis qui, impedit hic, nisi ad quos quod quam labore et natus corrupti alias nemo dolore!</p>
+      <div class="article">
+        <h2>Sample grid2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem at in laudantium, tenetur hic quam
+          praesentium ad, atque itaque maxime dolorem fugiat recusandae voluptatem ex! Veritatis, magnam! Tenetur,
+          exercitationem assumenda?</p>
       </div>
-      <div class="ar ar3">
-        <h3>Third article</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam numquam exercitationem veniam quidem,
-          facere perspiciatis qui, impedit hic, nisi ad quos quod quam labore et natus corrupti alias nemo dolore!</p>
+      <div class="article">
+        <h2>Sample grid3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem at in laudantium, tenetur hic quam
+          praesentium ad, atque itaque maxime dolorem fugiat recusandae voluptatem ex! Veritatis, magnam! Tenetur,
+          exercitationem assumenda?</p>
       </div>
+
     </div>
+
+
   </body>
 
 </html>
